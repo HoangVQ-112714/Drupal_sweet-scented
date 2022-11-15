@@ -1,0 +1,20 @@
+uuid: 190db718-a2f9-4f49-bbd2-ee7def81b020
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sweetscented
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: sweetscented_primary_admin_actions
+theme: sweetscented
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

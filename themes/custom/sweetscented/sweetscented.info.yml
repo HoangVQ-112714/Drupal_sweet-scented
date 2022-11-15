@@ -1,0 +1,8 @@
+name: 'Sweet Scented Theme'
+description: 'Theme for website'
+author: 'HoangVQ-112714'
+type: 'theme'
+core_version_requirement: ^9
+base theme: olivero
+package: custom
+

@@ -1,0 +1,22 @@
+uuid: 83e0a380-f2d9-4986-b198-ada3319a3531
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sweetscented
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: sweetscented_content
+theme: sweetscented
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
