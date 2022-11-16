@@ -1,0 +1,37 @@
+uuid: 5d1405c1-5c58-4d97-a8f8-e3440de7aaf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blog_media
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.blog
+id: node.blog.field_blog_media
+field_name: field_blog_media
+entity_type: node
+bundle: blog
+label: 'Blog Media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio: audio
+      document: document
+      image: image
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: audio
+field_type: entity_reference
