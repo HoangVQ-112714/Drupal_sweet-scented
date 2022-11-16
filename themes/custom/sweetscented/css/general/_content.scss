@@ -1,0 +1,62 @@
+// Front Page
+#home-body_front {
+  display: flex;
+  flex-direction: column;
+
+  .home-body_image {
+    img {
+      width: 100%;
+    }
+  }
+
+  .home-body_content {
+    .home-body_icon-social {
+      ul.social-list {
+        float: right;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+
+        li {
+          margin: 5px;
+          width: 30px;
+          text-align: center;
+          display: inline-block;
+
+          a {
+            color: $color_2;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50% 50% 50% 50%;
+            width: 30px;
+            height: 30px;
+            line-height: 28px;
+          }
+
+          @for $i from 1 through 6 {
+            &:nth-child(#{$i}):hover {
+              background-color: nth($socialColours, $i);
+              border-radius: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .home-body_avatar {
+      img {
+        width: 100%;
+      }
+    }
+
+    .home-body_description {
+      p {
+        span {
+          border: 3px solid $color_4;
+          border-bottom: 1px solid $color_4;
+          padding: 0 4px;
+        }
+      }
+    }
+  }
+}
