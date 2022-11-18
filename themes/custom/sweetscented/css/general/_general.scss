@@ -21,4 +21,6 @@ h6 {
 }
 
 // Body
-
+body[route-name="view.blog_show.page_1"] {
+  background-color: red;
+} 

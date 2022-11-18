@@ -23,6 +23,10 @@ h6 {
   font-family: "Montserrat", sans-serif;
 }
 
+body[route-name="view.blog_show.page_1"] {
+  background-color: red;
+}
+
 #home-body_front {
   display: flex;
   flex-direction: column;
