@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-p {
+p,
+div {
   font-size: 16px;
   font-family: $font_2;
   color: $color_2;
@@ -20,7 +21,185 @@ h6 {
   font-family: $font_1;
 }
 
-// Body
-body[route-name="view.blog_show.page_1"] {
-  background-color: red;
-} 
+a {
+  font-family: $font_1;
+  color: $color_2;
+  text-decoration: none;
+}
+
+// Header - Home
+header {
+  .section.layout-container.clearfix div {
+    display: flex;
+    flex-direction: row;
+
+    div#block-sweetscented-site-branding {
+      padding: 10px;
+      height: 100px;
+      width: 570px;
+
+      a {
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        line-height: 80px;
+        font-weight: 500;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    nav#block-sweetscented-main-menu {
+      padding: 10px 0;
+      width: calc(100% - 570px);
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: flex-end;
+        margin-bottom: 0;
+        height: 100px;
+
+        li {
+          margin: auto 0;
+          padding: 0 15px;
+
+          a {
+            font-weight: 500;
+            text-transform: uppercase;
+            font-family: $font_1;
+            line-height: 80px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Header - All
+body[route-name="entity.node.canonical"],
+body[route-name="view.blog_show.page_blog_show"] {
+  background-image: url(../images/sweetscented_background.png);
+  background-repeat: repeat;
+
+  div#main-wrapper {
+    background: white;
+    max-width: 1200px;
+    min-width: 900px;
+    margin: auto;
+    padding: 20px 100px 100px;
+    margin: 40px auto;
+
+    // Menu
+    .section.layout-container.clearfix {
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 40px 0 60px;
+
+        #block-blogmenuleft ul,
+        #block-blogmenumain ul,
+        #block-blogmenuright ul {
+          display: flex;
+          flex-direction: row;
+          list-style-type: none;
+          border: 1px solid $color_2;
+          border-left: none;
+          border-right: none;
+          padding: 0;
+          width: 100%;
+
+          li {
+            padding: 29px 20px;
+
+            a {
+              text-transform: uppercase;
+              font-family: $font_1;
+              font-size: 0.8rem;
+            }
+          }
+        }
+
+        #block-blogmenuleft,
+        #block-blogmenuright {
+          display: flex;
+          width: calc((100% - 160px) / 2);
+
+          ul {
+            margin: auto;
+          }
+        }
+
+        #block-blogmenuleft {
+          float: left;
+        }
+
+        #block-blogmenuright {
+          float: right;
+
+          ul {
+            justify-content: flex-end;
+          }
+        }
+
+        #block-blogmenumain {
+          ul {
+            border: none;
+            background-color: $color_2;
+            border-radius: 100%;
+            width: 150px;
+            height: 150px;
+            padding: 0;
+            margin: 0;
+
+            li {
+              width: 142px;
+              height: 142px;
+              padding: 0px;
+              background-color: $color_2;
+              border: 4px solid $color_1;
+              border-radius: 100%;
+              margin: auto;
+              position: relative;
+
+              a {
+                color: $color_1;
+                font-size: 1.4rem;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateY(-50%) translateX(-50%);
+                font-family: $font_3;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Body
+  body[route-name="view.blog_show.page_blog_show"] {
+    //Body
+    #main.main-content-big {
+      display: inline-block;
+
+      //Content
+      #content.main-content {
+        width: 60%;
+        float: left;
+      }
+
+      //Sidebar-right
+      #sidebar-second {
+        width: 30%;
+        float: right;
+      }
+    }
+  }
+}

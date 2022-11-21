@@ -17,3 +17,13 @@ function sweetscented_preprocess_html(&$variables){
 //     print_r($route_name);
 //     die();
  }
+
+ /**
+ * Implements hook_preprocess_node().
+ *
+ */
+function sweetcented_preprocess_node(&$variables){
+  $node = $variables['node'];
+  $title = $node->getTitle();
+  $variables['node_title'] = $title;
+}
