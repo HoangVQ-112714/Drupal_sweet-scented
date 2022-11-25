@@ -73,12 +73,16 @@ header .section.layout-container.clearfix div nav#block-sweetscented-main-menu u
 }
 
 body[route-name="entity.node.canonical"],
-body[route-name="view.blog_show.page_blog_show"] {
+body[route-name="view.blog_show.page_blog_show"],
+body[route-name="search.view_node_search"],
+body[route-name="entity.taxonomy_term.canonical"] {
   background-image: url(../images/sweetscented_background.png);
   background-repeat: repeat;
 }
 body[route-name="entity.node.canonical"] div#main-wrapper,
-body[route-name="view.blog_show.page_blog_show"] div#main-wrapper {
+body[route-name="view.blog_show.page_blog_show"] div#main-wrapper,
+body[route-name="search.view_node_search"] div#main-wrapper,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper {
   background: white;
   max-width: 1200px;
   min-width: 900px;
@@ -87,7 +91,9 @@ body[route-name="view.blog_show.page_blog_show"] div#main-wrapper {
   margin: 40px auto;
 }
 body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div,
-body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div {
+body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -98,7 +104,13 @@ body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-contai
 body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul,
 body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft ul,
 body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul,
-body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul {
+body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft ul,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft ul,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
@@ -113,7 +125,13 @@ body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-contai
 body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul li,
 body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft ul li,
 body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li,
-body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul li {
+body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul li,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft ul li,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul li,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft ul li,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul li {
   padding: 29px 20px;
 }
 body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft ul li a,
@@ -121,7 +139,13 @@ body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-contai
 body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul li a,
 body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft ul li a,
 body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li a,
-body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul li a {
+body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul li a,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft ul li a,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li a,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul li a,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft ul li a,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li a,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul li a {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
@@ -129,30 +153,46 @@ body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layou
 body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft,
 body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright,
 body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft,
-body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright {
+body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright {
   display: flex;
   width: calc((100% - 160px) / 2);
 }
 body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft ul,
 body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul,
 body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft ul,
-body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul {
+body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft ul,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft ul,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul {
   margin: auto;
 }
 body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft,
-body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft {
+body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuleft {
   float: left;
 }
 body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright,
-body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright {
+body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright {
   float: right;
 }
 body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul,
-body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul {
+body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenuright ul {
   justify-content: flex-end;
 }
 body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul,
-body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul {
+body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul {
   border: none;
   background-color: #000;
   border-radius: 100%;
@@ -162,7 +202,9 @@ body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layou
   margin: 0;
 }
 body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li,
-body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li {
+body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li {
   width: 142px;
   height: 142px;
   padding: 0px;
@@ -173,7 +215,9 @@ body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layou
   position: relative;
 }
 body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li a,
-body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li a {
+body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li a,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li a,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li a {
   color: #fff;
   font-size: 1.4rem;
   text-align: center;
@@ -184,19 +228,80 @@ body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layou
   font-family: "Rubik Distressed", serif;
   font-weight: 500;
 }
-body[route-name="entity.node.canonical"] body[route-name="view.blog_show.page_blog_show"] #main.main-content-big,
-body[route-name="view.blog_show.page_blog_show"] body[route-name="view.blog_show.page_blog_show"] #main.main-content-big {
+
+body[route-name="view.blog_show.page_blog_show"] #main.main-content-big,
+body[route-name="search.view_node_search"] #main.main-content-big,
+body[route-name="entity.taxonomy_term.canonical"] #main.main-content-big {
   display: inline-block;
 }
-body[route-name="entity.node.canonical"] body[route-name="view.blog_show.page_blog_show"] #main.main-content-big #content.main-content,
-body[route-name="view.blog_show.page_blog_show"] body[route-name="view.blog_show.page_blog_show"] #main.main-content-big #content.main-content {
+body[route-name="view.blog_show.page_blog_show"] #main.main-content-big #content.main-content,
+body[route-name="search.view_node_search"] #main.main-content-big #content.main-content,
+body[route-name="entity.taxonomy_term.canonical"] #main.main-content-big #content.main-content {
   width: 60%;
   float: left;
 }
-body[route-name="entity.node.canonical"] body[route-name="view.blog_show.page_blog_show"] #main.main-content-big #sidebar-second,
-body[route-name="view.blog_show.page_blog_show"] body[route-name="view.blog_show.page_blog_show"] #main.main-content-big #sidebar-second {
+body[route-name="view.blog_show.page_blog_show"] #main.main-content-big #sidebar-second,
+body[route-name="search.view_node_search"] #main.main-content-big #sidebar-second,
+body[route-name="entity.taxonomy_term.canonical"] #main.main-content-big #sidebar-second {
   width: 30%;
   float: right;
+}
+body[route-name="view.blog_show.page_blog_show"] #main.main-content-big #sidebar-second aside.section div,
+body[route-name="search.view_node_search"] #main.main-content-big #sidebar-second aside.section div,
+body[route-name="entity.taxonomy_term.canonical"] #main.main-content-big #sidebar-second aside.section div {
+  display: flex;
+  flex-direction: column;
+}
+body[route-name="view.blog_show.page_blog_show"] #main.main-content-big #sidebar-second aside.section div div#block-searchform,
+body[route-name="view.blog_show.page_blog_show"] #main.main-content-big #sidebar-second aside.section div div#block-views-block-search-content-by-categories-block-1,
+body[route-name="view.blog_show.page_blog_show"] #main.main-content-big #sidebar-second aside.section div div#block-views-block-content-block-1,
+body[route-name="search.view_node_search"] #main.main-content-big #sidebar-second aside.section div div#block-searchform,
+body[route-name="search.view_node_search"] #main.main-content-big #sidebar-second aside.section div div#block-views-block-search-content-by-categories-block-1,
+body[route-name="search.view_node_search"] #main.main-content-big #sidebar-second aside.section div div#block-views-block-content-block-1,
+body[route-name="entity.taxonomy_term.canonical"] #main.main-content-big #sidebar-second aside.section div div#block-searchform,
+body[route-name="entity.taxonomy_term.canonical"] #main.main-content-big #sidebar-second aside.section div div#block-views-block-search-content-by-categories-block-1,
+body[route-name="entity.taxonomy_term.canonical"] #main.main-content-big #sidebar-second aside.section div div#block-views-block-content-block-1 {
+  border: 1px solid #9aaeb9;
+  margin-bottom: 100px;
+  position: relative;
+  padding: 40px 40px 30px;
+}
+body[route-name="view.blog_show.page_blog_show"] #main.main-content-big #sidebar-second aside.section div h2,
+body[route-name="search.view_node_search"] #main.main-content-big #sidebar-second aside.section div h2,
+body[route-name="entity.taxonomy_term.canonical"] #main.main-content-big #sidebar-second aside.section div h2 {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 40px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 10px 0;
+}
+body[route-name="view.blog_show.page_blog_show"] #main.main-content-big #sidebar-second aside.section div div#block-searchform form#search-block-form div,
+body[route-name="search.view_node_search"] #main.main-content-big #sidebar-second aside.section div div#block-searchform form#search-block-form div,
+body[route-name="entity.taxonomy_term.canonical"] #main.main-content-big #sidebar-second aside.section div div#block-searchform form#search-block-form div {
+  height: 42px;
+}
+body[route-name="view.blog_show.page_blog_show"] #main.main-content-big #sidebar-second aside.section div div#block-searchform form#search-block-form div input,
+body[route-name="search.view_node_search"] #main.main-content-big #sidebar-second aside.section div div#block-searchform form#search-block-form div input,
+body[route-name="entity.taxonomy_term.canonical"] #main.main-content-big #sidebar-second aside.section div div#block-searchform form#search-block-form div input {
+  height: 42px;
+}
+body[route-name="view.blog_show.page_blog_show"] #main.main-content-big #sidebar-second aside.section div div#block-searchform form#search-block-form div#edit-actions,
+body[route-name="search.view_node_search"] #main.main-content-big #sidebar-second aside.section div div#block-searchform form#search-block-form div#edit-actions,
+body[route-name="entity.taxonomy_term.canonical"] #main.main-content-big #sidebar-second aside.section div div#block-searchform form#search-block-form div#edit-actions {
+  display: none !important;
+}
+body[route-name="view.blog_show.page_blog_show"] #main.main-content-big #sidebar-second aside.section div div#block-views-block-search-content-by-categories-block-1 .field-content,
+body[route-name="search.view_node_search"] #main.main-content-big #sidebar-second aside.section div div#block-views-block-search-content-by-categories-block-1 .field-content,
+body[route-name="entity.taxonomy_term.canonical"] #main.main-content-big #sidebar-second aside.section div div#block-views-block-search-content-by-categories-block-1 .field-content {
+  border-bottom: 1px dashed #9aaeb9;
+  padding: 5px;
 }
 
 #home-body_front {

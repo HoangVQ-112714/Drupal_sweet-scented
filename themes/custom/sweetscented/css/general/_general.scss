@@ -80,7 +80,9 @@ header {
 
 // Header - All
 body[route-name="entity.node.canonical"],
-body[route-name="view.blog_show.page_blog_show"] {
+body[route-name="view.blog_show.page_blog_show"],
+body[route-name="search.view_node_search"],
+body[route-name="entity.taxonomy_term.canonical"] {
   background-image: url(../images/sweetscented_background.png);
   background-repeat: repeat;
 
@@ -182,23 +184,81 @@ body[route-name="view.blog_show.page_blog_show"] {
       }
     }
   }
+}
 
-  // Body
-  body[route-name="view.blog_show.page_blog_show"] {
-    //Body
-    #main.main-content-big {
-      display: inline-block;
+// Body
+body[route-name="view.blog_show.page_blog_show"],
+body[route-name="search.view_node_search"],
+body[route-name="entity.taxonomy_term.canonical"] {
+  //Body
+  #main.main-content-big {
+    display: inline-block;
 
-      //Content
-      #content.main-content {
-        width: 60%;
-        float: left;
-      }
+    //Content
+    #content.main-content {
+      width: 60%;
+      float: left;
+    }
 
-      //Sidebar-right
-      #sidebar-second {
-        width: 30%;
-        float: right;
+    //Sidebar-right
+    #sidebar-second {
+      width: 30%;
+      float: right;
+
+      aside.section {
+        div {
+          display: flex;
+          flex-direction: column;
+
+          div#block-searchform,
+          div#block-views-block-search-content-by-categories-block-1,
+          div#block-views-block-content-block-1 {
+            border: 1px solid $color_5;
+            margin-bottom: 100px;
+            position: relative;
+            padding: 40px 40px 30px;
+          }
+
+          h2 {
+            position: absolute;
+            top: -20px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0 40px;
+            background-color: $color_2;
+            color: $color_1;
+            font-weight: 400;
+            font-size: 20px;
+            padding: 10px 0;
+          }
+
+          div#block-searchform {
+
+            form#search-block-form {
+              div {
+                height: 42px;
+
+                input {
+                  height: 42px;
+                }
+              }
+
+              div#edit-actions {
+                display: none !important;
+              }
+            }
+          }
+
+          div#block-views-block-search-content-by-categories-block-1 {
+
+            .field-content {
+              border-bottom: 1px dashed $color_5;
+              padding: 5px;
+            }
+          }
+        }
       }
     }
   }
