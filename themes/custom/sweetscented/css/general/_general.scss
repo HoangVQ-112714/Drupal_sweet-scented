@@ -28,49 +28,62 @@ a {
 }
 
 // Header - Home
-header {
-  .section.layout-container.clearfix div {
-    display: flex;
-    flex-direction: row;
+#main-wrapper-home {
+  background: white;
+  max-width: 1200px;
+  min-width: 900px;
+  margin: auto;
+  padding: 20px 0px 50px;
+  margin: 40px auto;
 
-    div#block-sweetscented-site-branding {
-      padding: 10px;
-      height: 100px;
-      width: 570px;
+  header#header-home {
+    margin-bottom: 70px;
 
-      a {
-        text-transform: uppercase;
-        font-size: 1.6rem;
-        line-height: 80px;
-        font-weight: 500;
-
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-    }
-
-    nav#block-sweetscented-main-menu {
-      padding: 10px 0;
-      width: calc(100% - 570px);
-
-      ul {
+    .section-home-page {
+      & > div {
         display: flex;
         flex-direction: row;
-        list-style-type: none;
-        justify-content: flex-end;
-        margin-bottom: 0;
-        height: 100px;
 
-        li {
-          margin: auto 0;
-          padding: 0 15px;
+        div#block-sweetscented-site-branding {
+          padding: 10px;
+          height: 100px;
+          width: 570px;
 
           a {
-            font-weight: 500;
             text-transform: uppercase;
-            font-family: $font_1;
+            font-size: 3.3rem;
             line-height: 80px;
+            font-family: $font_3;
+            font-weight: 500;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+
+        nav#block-sweetscented-main-menu {
+          padding: 10px 0;
+          width: calc(100% - 570px);
+
+          ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            justify-content: flex-end;
+            margin-bottom: 0;
+
+            li {
+              margin: auto 0;
+              padding: 0 15px;
+
+              a {
+                font-weight: 500;
+                text-transform: uppercase;
+                font-family: $font_1;
+                line-height: 80px;
+              }
+            }
           }
         }
       }
@@ -120,7 +133,12 @@ body[route-name="entity.taxonomy_term.canonical"] {
             a {
               text-transform: uppercase;
               font-family: $font_1;
-              font-size: 0.8rem;
+              font-size: 0.9rem;
+
+              &:hover {
+                color: $color_4;
+                font-weight: 600;
+              }
             }
           }
         }
@@ -177,6 +195,10 @@ body[route-name="entity.taxonomy_term.canonical"] {
                 transform: translateY(-50%) translateX(-50%);
                 font-family: $font_3;
                 font-weight: 500;
+
+                &:hover {
+                  font-weight: 500;
+                }
               }
             }
           }
@@ -235,7 +257,6 @@ body[route-name="entity.taxonomy_term.canonical"] {
           }
 
           div#block-searchform {
-
             form#search-block-form {
               div {
                 height: 42px;
@@ -252,14 +273,57 @@ body[route-name="entity.taxonomy_term.canonical"] {
           }
 
           div#block-views-block-search-content-by-categories-block-1 {
+            .views-row {
+              .field-content {
+                border-bottom: 1px dashed $color_5;
+                padding: 5px;
+              }
 
-            .field-content {
-              border-bottom: 1px dashed $color_5;
-              padding: 5px;
+              &:last-child {
+                .field-content {
+                  border-bottom: none;
+                }
+              }
+            }
+          }
+
+          div#block-views-block-content-block-1 {
+            tbody {
+              tr {
+                border-bottom: 1px dashed $color_5;
+                margin-bottom: 5px;
+
+                td {
+                  padding-top: 13px;
+                }
+
+                &:first-child {
+                  td {
+                    padding-top: 0;
+                  }
+                }
+
+                &:last-child {
+                  border-bottom: none;
+                }
+              }
             }
           }
         }
       }
+    }
+  }
+
+  // Paginate
+  nav.pager {
+    display: flex;
+
+    ul.pager__items.js-pager__items {
+      display: flex;
+      width: 400px;
+      margin: auto;
+      list-style-type: none;
+      justify-content: space-evenly;
     }
   }
 }
