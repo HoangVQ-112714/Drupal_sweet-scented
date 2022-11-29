@@ -1,0 +1,25 @@
+uuid: 1aa68d43-18f4-4ea8-a590-0ba68f8a3f93
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.blog-menu-left
+  module:
+    - system
+  theme:
+    - sweetscented
+id: blogmenuleft
+theme: sweetscented
+region: primary_menu
+weight: -6
+provider: null
+plugin: 'system_menu_block:blog-menu-left'
+settings:
+  id: 'system_menu_block:blog-menu-left'
+  label: 'Blog Menu Left'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

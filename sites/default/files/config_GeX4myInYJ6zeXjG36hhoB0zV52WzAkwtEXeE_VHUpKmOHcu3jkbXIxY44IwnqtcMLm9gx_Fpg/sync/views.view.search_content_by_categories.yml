@@ -1,20 +1,19 @@
-uuid: 70330415-3ea5-418e-88ac-3442cb8b82b0
+uuid: 6dbe9cee-51db-47ed-ba58-37df3e45a488
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
-    - node.type.blog
+    - taxonomy.vocabulary.categories
   module:
-    - node
+    - taxonomy
     - user
-id: blog_show
-label: 'Blog show'
+id: search_content_by_categories
+label: 'Search content by categories'
 module: views
 description: ''
 tag: ''
-base_table: node_field_data
-base_field: nid
+base_table: taxonomy_term_field_data
+base_field: tid
 display:
   default:
     id: default
@@ -22,18 +21,18 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Blog
+      title: 'Chủ đề'
       fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: title
-          plugin_id: field
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: term_name
           label: ''
           exclude: false
           alter:
@@ -71,27 +70,12 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          convert_spaces: false
       pager:
-        type: full
+        type: some
         options:
-          offset: null
-          items_per_page: 1
-          total_pages: null
-          id: 0
-          tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          quantity: 9
+          offset: 0
+          items_per_page: 5
       exposed_form:
         type: basic
         options:
@@ -110,30 +94,14 @@ display:
         type: tag
         options: {  }
       empty: {  }
-      sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          order: DESC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
-          granularity: second
+      sorts: {  }
       arguments: {  }
       filters:
         status:
           id: status
-          table: node_field_data
+          table: taxonomy_term_field_data
           field: status
-          entity_type: node
+          entity_type: taxonomy_term
           entity_field: status
           plugin_id: boolean
           value: '1'
@@ -142,24 +110,22 @@ display:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          entity_type: node
-          entity_field: type
+        vid:
+          id: vid
+          table: taxonomy_term_field_data
+          field: vid
+          entity_type: taxonomy_term
+          entity_field: vid
           plugin_id: bundle
           value:
-            blog: blog
+            categories: categories
           expose:
             operator_limit_selection: false
             operator_list: {  }
       style:
         type: default
       row:
-        type: 'entity:node'
-        options:
-          view_mode: teaser
+        type: fields
       query:
         type: views_query
         options:
@@ -177,27 +143,19 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
-        - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  page_blog_show:
-    id: page_blog_show
-    display_title: Page
-    display_plugin: page
+  block_1:
+    id: block_1
+    display_title: Block
+    display_plugin: block
     position: 1
     display_options:
-      display_extenders:
-        metatag_display_extender:
-          metatags: {  }
-          tokenize: false
-      path: blog
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
-        - 'user.node_grants:view'
         - user.permissions
       tags: {  }
