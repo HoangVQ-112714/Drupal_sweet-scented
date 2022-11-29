@@ -119,3 +119,81 @@ article.node.node--type-blog.node--promoted.node--view-mode-teaser {
     }
   }
 }
+
+// Content Full
+article.contextual-region.node.node--type-blog.node--promoted.node--view-mode-full {
+  header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    .blog-category {
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      margin-bottom: 70px;
+
+      div {
+        margin-left: 5px;
+
+        a {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .node__content {
+    img {
+      width: 100%;
+      border: 2px solid $color_4;
+      border-radius: 7px;
+    }
+  }
+
+  .blog-tags {
+    display: flex;
+    flex-direction: row;
+
+    div {
+      display: flex;
+      flex-direction: row;
+
+      a {
+        margin-left: 5px;
+        background-color: $color_4;
+        border-radius: 7px;
+        padding: 0 10px;
+      }
+    }
+  }
+
+  .blog-related_blogs {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      div{
+        margin-bottom: 7px;
+
+        a{
+          text-transform: none;
+          border-bottom: 1px dashed $color_4;
+          padding-bottom: 5px;
+
+          &::before{
+            font-family: "Font Awesome 6 Free";
+            content: "\f02e";
+            color: $color_4;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
