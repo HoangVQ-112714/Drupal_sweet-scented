@@ -75,7 +75,7 @@ display:
         type: full
         options:
           offset: null
-          items_per_page: 1
+          items_per_page: 7
           total_pages: null
           id: 0
           tags:
