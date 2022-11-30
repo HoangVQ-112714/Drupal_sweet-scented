@@ -214,9 +214,13 @@ body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layo
   justify-content: flex-end;
 }
 body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul,
+body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div nav#block-blogmenumain-2 ul,
 body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul,
+body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div nav#block-blogmenumain-2 ul,
 body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul,
-body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul {
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div nav#block-blogmenumain-2 ul,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div nav#block-blogmenumain-2 ul {
   border: none;
   background-color: #000;
   border-radius: 100%;
@@ -226,9 +230,13 @@ body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layo
   margin: 0;
 }
 body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li,
+body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div nav#block-blogmenumain-2 ul li,
 body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li,
+body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div nav#block-blogmenumain-2 ul li,
 body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li,
-body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li {
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div nav#block-blogmenumain-2 ul li,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div nav#block-blogmenumain-2 ul li {
   width: 142px;
   height: 142px;
   padding: 0px;
@@ -239,9 +247,13 @@ body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layo
   position: relative;
 }
 body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li a,
+body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div nav#block-blogmenumain-2 ul li a,
 body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li a,
+body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div nav#block-blogmenumain-2 ul li a,
 body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li a,
-body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li a {
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div nav#block-blogmenumain-2 ul li a,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li a,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div nav#block-blogmenumain-2 ul li a {
   color: #fff;
   font-size: 1.4rem;
   text-align: center;
@@ -253,10 +265,20 @@ body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layo
   font-weight: 500;
 }
 body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li a:hover,
+body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div nav#block-blogmenumain-2 ul li a:hover,
 body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li a:hover,
+body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div nav#block-blogmenumain-2 ul li a:hover,
 body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li a:hover,
-body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li a:hover {
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div nav#block-blogmenumain-2 ul li a:hover,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div #block-blogmenumain ul li a:hover,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div nav#block-blogmenumain-2 ul li a:hover {
   font-weight: 500;
+}
+body[route-name="entity.node.canonical"] div#main-wrapper .section.layout-container.clearfix div nav#block-blogmenumain-2,
+body[route-name="view.blog_show.page_blog_show"] div#main-wrapper .section.layout-container.clearfix div nav#block-blogmenumain-2,
+body[route-name="search.view_node_search"] div#main-wrapper .section.layout-container.clearfix div nav#block-blogmenumain-2,
+body[route-name="entity.taxonomy_term.canonical"] div#main-wrapper .section.layout-container.clearfix div nav#block-blogmenumain-2 {
+  display: none;
 }
 
 body[route-name="view.blog_show.page_blog_show"] #main.main-content-big,
@@ -504,6 +526,8 @@ article.contextual-region.node.node--type-blog.node--promoted.node--view-mode-fu
   width: 100%;
   border: 2px solid #dd9933;
   border-radius: 7px;
+  height: auto;
+  object-fit: contain;
 }
 article.contextual-region.node.node--type-blog.node--promoted.node--view-mode-full .blog-tags {
   display: flex;
@@ -583,6 +607,74 @@ body[route-name="search.view_node_search"] #block-sweetscented-content form#sear
   }
   div#main-wrapper-home div#block-sweetscented-content div#home-body_front .home-body_content {
     max-width: 992px;
+  }
+  body[route-name="entity.node.canonical"] header#header,
+body[route-name="view.blog_show.page_blog_show"] header#header,
+body[route-name="search.view_node_search"] header#header,
+body[route-name="entity.taxonomy_term.canonical"] header#header {
+    border-top: 1px solid #000;
+  }
+  body[route-name="entity.node.canonical"] header#header .section.layout-container.clearfix div,
+body[route-name="view.blog_show.page_blog_show"] header#header .section.layout-container.clearfix div,
+body[route-name="search.view_node_search"] header#header .section.layout-container.clearfix div,
+body[route-name="entity.taxonomy_term.canonical"] header#header .section.layout-container.clearfix div {
+    flex-direction: column !important;
+  }
+  body[route-name="entity.node.canonical"] header#header .section.layout-container.clearfix div nav#block-blogmenumain,
+body[route-name="entity.node.canonical"] header#header .section.layout-container.clearfix div #block-blogmenuright,
+body[route-name="view.blog_show.page_blog_show"] header#header .section.layout-container.clearfix div nav#block-blogmenumain,
+body[route-name="view.blog_show.page_blog_show"] header#header .section.layout-container.clearfix div #block-blogmenuright,
+body[route-name="search.view_node_search"] header#header .section.layout-container.clearfix div nav#block-blogmenumain,
+body[route-name="search.view_node_search"] header#header .section.layout-container.clearfix div #block-blogmenuright,
+body[route-name="entity.taxonomy_term.canonical"] header#header .section.layout-container.clearfix div nav#block-blogmenumain,
+body[route-name="entity.taxonomy_term.canonical"] header#header .section.layout-container.clearfix div #block-blogmenuright {
+    display: none !important;
+  }
+  body[route-name="entity.node.canonical"] header#header .section.layout-container.clearfix div nav#block-blogmenumain-2,
+body[route-name="view.blog_show.page_blog_show"] header#header .section.layout-container.clearfix div nav#block-blogmenumain-2,
+body[route-name="search.view_node_search"] header#header .section.layout-container.clearfix div nav#block-blogmenumain-2,
+body[route-name="entity.taxonomy_term.canonical"] header#header .section.layout-container.clearfix div nav#block-blogmenumain-2 {
+    display: flex !important;
+  }
+  body[route-name="entity.node.canonical"] header#header .section.layout-container.clearfix div nav#block-blogmenumain-2 ul,
+body[route-name="view.blog_show.page_blog_show"] header#header .section.layout-container.clearfix div nav#block-blogmenumain-2 ul,
+body[route-name="search.view_node_search"] header#header .section.layout-container.clearfix div nav#block-blogmenumain-2 ul,
+body[route-name="entity.taxonomy_term.canonical"] header#header .section.layout-container.clearfix div nav#block-blogmenumain-2 ul {
+    display: flex;
+    list-style-type: none;
+    margin: auto !important;
+  }
+  body[route-name="entity.node.canonical"] header#header .section.layout-container.clearfix div nav#block-blogmenumain-2 ul li,
+body[route-name="view.blog_show.page_blog_show"] header#header .section.layout-container.clearfix div nav#block-blogmenumain-2 ul li,
+body[route-name="search.view_node_search"] header#header .section.layout-container.clearfix div nav#block-blogmenumain-2 ul li,
+body[route-name="entity.taxonomy_term.canonical"] header#header .section.layout-container.clearfix div nav#block-blogmenumain-2 ul li {
+    margin: auto;
+  }
+  body[route-name="entity.node.canonical"] header#header .section.layout-container.clearfix div #block-blogmenuleft,
+body[route-name="view.blog_show.page_blog_show"] header#header .section.layout-container.clearfix div #block-blogmenuleft,
+body[route-name="search.view_node_search"] header#header .section.layout-container.clearfix div #block-blogmenuleft,
+body[route-name="entity.taxonomy_term.canonical"] header#header .section.layout-container.clearfix div #block-blogmenuleft {
+    width: 100% !important;
+    border-bottom: 1px solid #000;
+  }
+  body[route-name="entity.node.canonical"] header#header .section.layout-container.clearfix div #block-blogmenuleft ul,
+body[route-name="view.blog_show.page_blog_show"] header#header .section.layout-container.clearfix div #block-blogmenuleft ul,
+body[route-name="search.view_node_search"] header#header .section.layout-container.clearfix div #block-blogmenuleft ul,
+body[route-name="entity.taxonomy_term.canonical"] header#header .section.layout-container.clearfix div #block-blogmenuleft ul {
+    justify-content: space-around;
+    border: none !important;
+  }
+  body[route-name="entity.node.canonical"] #main.main-content-big #content.main-content,
+body[route-name="view.blog_show.page_blog_show"] #main.main-content-big #content.main-content,
+body[route-name="search.view_node_search"] #main.main-content-big #content.main-content,
+body[route-name="entity.taxonomy_term.canonical"] #main.main-content-big #content.main-content {
+    width: 100%;
+  }
+  body[route-name="entity.node.canonical"] #main.main-content-big div#sidebar-second,
+body[route-name="view.blog_show.page_blog_show"] #main.main-content-big div#sidebar-second,
+body[route-name="search.view_node_search"] #main.main-content-big div#sidebar-second,
+body[route-name="entity.taxonomy_term.canonical"] #main.main-content-big div#sidebar-second {
+    display: none;
   }
 }
 @media (max-width: 767px) {

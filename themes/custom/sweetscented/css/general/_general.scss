@@ -40,7 +40,7 @@ a {
     margin-bottom: 70px;
 
     .section-home-page {
-      & > div {
+      &>div {
         display: flex;
         flex-direction: row;
 
@@ -101,8 +101,6 @@ body[route-name="entity.taxonomy_term.canonical"] {
 
   div#main-wrapper {
     background: white;
-    // max-width: 1200px;
-    // min-width: 900px;
     margin: auto;
     padding: 20px 100px 100px;
     margin: 40px auto;
@@ -165,7 +163,8 @@ body[route-name="entity.taxonomy_term.canonical"] {
           }
         }
 
-        #block-blogmenumain {
+        #block-blogmenumain,
+        nav#block-blogmenumain-2 {
           ul {
             border: none;
             background-color: $color_2;
@@ -203,6 +202,10 @@ body[route-name="entity.taxonomy_term.canonical"] {
             }
           }
         }
+
+        nav#block-blogmenumain-2{
+          display: none;
+        }
       }
     }
   }
@@ -212,6 +215,7 @@ body[route-name="entity.taxonomy_term.canonical"] {
 body[route-name="view.blog_show.page_blog_show"],
 body[route-name="search.view_node_search"],
 body[route-name="entity.taxonomy_term.canonical"] {
+
   //Body
   #main.main-content-big {
     display: inline-block;

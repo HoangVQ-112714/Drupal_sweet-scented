@@ -19,74 +19,21 @@
 // ---------BREAKPOINT---------
 // Responsive - Tablet
 @media (min-width: 768px) and (max-width: 992px) {
-    //Home
-    div#main-wrapper-home {
-      margin: 40px 0;
-      padding: 20px 0 50px;
-      max-width:992px;
-      min-width: auto;
-  
-      header#header-home {
-        padding: 0;
-        margin: 0 0 20px;
-        max-width: 992px;
-  
-        .section-home-page {
-          & > div {
-            display: flex;
-            flex-direction: column !important;
-  
-            div#block-sweetscented-site-branding {
-              margin: auto;
-              text-align: center;
-            }
-  
-            nav#block-sweetscented-main-menu {
-              width: 50%;
-              margin: auto;
-              margin-top: -30px;
-              padding: 0;
-  
-              ul {
-                padding: 0;
-                justify-content: space-evenly;
-              }
-            }
-          }
-        }
-      }
-  
-      div#block-sweetscented-content {
-        div#home-body_front {
-          .home-body_image {
-            img {
-              border: 5px solid $color_5;
-            }
-          }
-  
-          .home-body_content{
-              max-width: 992px;
-          }
-        }
-      }
-    }
-}
 
-// Responsive - Mobile
-@media (max-width: 767px) {
-  //Home
+  // Home
   div#main-wrapper-home {
     margin: 40px 0;
     padding: 20px 0 50px;
+    max-width: 992px;
     min-width: auto;
 
     header#header-home {
       padding: 0;
       margin: 0 0 20px;
-      max-width: 767px;
+      max-width: 992px;
 
       .section-home-page {
-        & > div {
+        &>div {
           display: flex;
           flex-direction: column !important;
 
@@ -118,8 +65,120 @@
           }
         }
 
-        .home-body_content{
-            max-width: 768px;
+        .home-body_content {
+          max-width: 992px;
+        }
+      }
+    }
+  }
+
+  // Blog Page & Content Full
+  body[route-name="entity.node.canonical"],
+  body[route-name="view.blog_show.page_blog_show"],
+  body[route-name="search.view_node_search"],
+  body[route-name="entity.taxonomy_term.canonical"] {
+
+    header#header {
+      border-top: 1px solid $color_2;
+
+      .section.layout-container.clearfix {
+        div {
+          flex-direction: column !important;
+
+          nav#block-blogmenumain,
+          #block-blogmenuright {
+            display: none !important;
+          }
+
+          nav#block-blogmenumain-2 {
+            display: flex !important;
+
+            ul {
+              display: flex;
+              list-style-type: none;
+              margin: auto !important;
+
+              li {
+                margin: auto;
+              }
+            }
+          }
+
+          #block-blogmenuleft {
+            width: 100% !important;
+            border-bottom: 1px solid $color_2;
+
+            ul {
+              justify-content: space-around;
+              border: none !important;
+            }
+          }
+        }
+      }
+    }
+
+    #main.main-content-big {
+
+      #content.main-content {
+        width: 100%;
+      }
+
+      div#sidebar-second {
+        display: none;
+      }
+    }
+  }
+}
+
+// Responsive - Mobile
+@media (max-width: 767px) {
+
+  //Home
+  div#main-wrapper-home {
+    margin: 40px 0;
+    padding: 20px 0 50px;
+    min-width: auto;
+
+    header#header-home {
+      padding: 0;
+      margin: 0 0 20px;
+      max-width: 767px;
+
+      .section-home-page {
+        &>div {
+          display: flex;
+          flex-direction: column !important;
+
+          div#block-sweetscented-site-branding {
+            margin: auto;
+            text-align: center;
+          }
+
+          nav#block-sweetscented-main-menu {
+            width: 50%;
+            margin: auto;
+            margin-top: -30px;
+            padding: 0;
+
+            ul {
+              padding: 0;
+              justify-content: space-evenly;
+            }
+          }
+        }
+      }
+    }
+
+    div#block-sweetscented-content {
+      div#home-body_front {
+        .home-body_image {
+          img {
+            border: 5px solid $color_5;
+          }
+        }
+
+        .home-body_content {
+          max-width: 768px;
         }
       }
     }
