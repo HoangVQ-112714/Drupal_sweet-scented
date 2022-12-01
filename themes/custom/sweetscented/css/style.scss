@@ -63,6 +63,9 @@
         display: none;
       }
     }
+    article.node.node--type-blog.node--promoted.node--view-mode-teaser .node__content div img{
+      height: auto;
+    }
   }
 }
 
@@ -144,6 +147,8 @@
           div#block-sweetscented-site-branding {
             margin: auto;
             text-align: center;
+            width: auto;
+            height: auto;
           }
 
           nav#block-sweetscented-main-menu {
