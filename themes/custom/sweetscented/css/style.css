@@ -486,7 +486,7 @@ article.node.node--type-blog.node--promoted.node--view-mode-teaser .node__conten
   padding-bottom: 5px;
   border-bottom: 1px solid #dd9933;
   width: 100%;
-  height: 340px;
+  height: 500px;
 }
 article.node.node--type-blog.node--promoted.node--view-mode-teaser .blog-tags {
   display: flex;
@@ -722,7 +722,6 @@ body[route-name="entity.taxonomy_term.canonical"] article.node.node--type-blog.n
   div#main-wrapper-home div#block-sweetscented-content div#home-body_front .home-body_content {
     max-width: 768px;
   }
-
   body[route-name="entity.node.canonical"] div#main-wrapper,
 body[route-name="view.blog_show.page_blog_show"] div#main-wrapper,
 body[route-name="search.view_node_search"] div#main-wrapper,
