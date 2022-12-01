@@ -505,63 +505,63 @@ article.node.node--type-blog.node--promoted.node--view-mode-teaser .blog-tags di
   margin-left: 5px;
 }
 
-article.contextual-region.node.node--type-blog.node--promoted.node--view-mode-full header {
+article.node.node--type-blog.node--promoted.node--view-mode-full header {
   text-align: center;
   display: flex;
   flex-direction: column;
 }
-article.contextual-region.node.node--type-blog.node--promoted.node--view-mode-full header .blog-category {
+article.node.node--type-blog.node--promoted.node--view-mode-full header .blog-category {
   display: flex;
   flex-direction: row;
   margin: auto;
   margin-bottom: 70px;
 }
-article.contextual-region.node.node--type-blog.node--promoted.node--view-mode-full header .blog-category div {
+article.node.node--type-blog.node--promoted.node--view-mode-full header .blog-category div {
   margin-left: 5px;
 }
-article.contextual-region.node.node--type-blog.node--promoted.node--view-mode-full header .blog-category div a {
+article.node.node--type-blog.node--promoted.node--view-mode-full header .blog-category div a {
   font-weight: 500;
 }
-article.contextual-region.node.node--type-blog.node--promoted.node--view-mode-full .node__content img {
+article.node.node--type-blog.node--promoted.node--view-mode-full .node__content img {
   width: 100%;
   border: 2px solid #dd9933;
   border-radius: 7px;
   height: auto;
   object-fit: contain;
 }
-article.contextual-region.node.node--type-blog.node--promoted.node--view-mode-full .blog-tags {
+article.node.node--type-blog.node--promoted.node--view-mode-full .blog-tags {
   display: flex;
   flex-direction: row;
 }
-article.contextual-region.node.node--type-blog.node--promoted.node--view-mode-full .blog-tags div {
+article.node.node--type-blog.node--promoted.node--view-mode-full .blog-tags div {
   display: flex;
   flex-direction: row;
 }
-article.contextual-region.node.node--type-blog.node--promoted.node--view-mode-full .blog-tags div a {
+article.node.node--type-blog.node--promoted.node--view-mode-full .blog-tags div a {
   margin-left: 5px;
   background-color: #dd9933;
   border-radius: 7px;
   padding: 0 10px;
 }
-article.contextual-region.node.node--type-blog.node--promoted.node--view-mode-full .blog-related_blogs {
+article.node.node--type-blog.node--promoted.node--view-mode-full .blog-related_blogs {
   margin-top: 70px;
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
 }
-article.contextual-region.node.node--type-blog.node--promoted.node--view-mode-full .blog-related_blogs div {
+article.node.node--type-blog.node--promoted.node--view-mode-full .blog-related_blogs div {
   display: flex;
   flex-direction: column;
 }
-article.contextual-region.node.node--type-blog.node--promoted.node--view-mode-full .blog-related_blogs div div {
+article.node.node--type-blog.node--promoted.node--view-mode-full .blog-related_blogs div div {
   margin-bottom: 7px;
 }
-article.contextual-region.node.node--type-blog.node--promoted.node--view-mode-full .blog-related_blogs div div a {
+article.node.node--type-blog.node--promoted.node--view-mode-full .blog-related_blogs div div a {
   text-transform: none;
   border-bottom: 1px dashed #dd9933;
   padding-bottom: 5px;
 }
-article.contextual-region.node.node--type-blog.node--promoted.node--view-mode-full .blog-related_blogs div div a::before {
+article.node.node--type-blog.node--promoted.node--view-mode-full .blog-related_blogs div div a::before {
   font-family: "Font Awesome 6 Free";
   content: "\f02e";
   color: #dd9933;
@@ -608,6 +608,7 @@ body[route-name="search.view_node_search"] #block-sweetscented-content form#sear
   div#main-wrapper-home div#block-sweetscented-content div#home-body_front .home-body_content {
     max-width: 992px;
   }
+
   body[route-name="entity.node.canonical"] header#header,
 body[route-name="view.blog_show.page_blog_show"] header#header,
 body[route-name="search.view_node_search"] header#header,
