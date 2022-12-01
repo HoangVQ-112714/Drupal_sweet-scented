@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f88a5b045ee7c20c7074c8a5128dc2f",
+    "content-hash": "d663cac71b236060d83cf135f30f3fae",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1163,65 +1163,6 @@
             "time": "2022-05-31T18:46:25+00:00"
         },
         {
-            "name": "drupal/checklistapi",
-            "version": "2.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/checklistapi.git",
-                "reference": "2.1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/checklistapi-2.1.1.zip",
-                "reference": "2.1.1",
-                "shasum": "69acb461c13aa7d37a91da078c3ceb0818543b87"
-            },
-            "require": {
-                "drupal/core": "^9.3 || ^10",
-                "php": ">=5.6.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.1.1",
-                    "datestamp": "1659116985",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^10"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Travis Carden",
-                    "homepage": "https://www.drupal.org/user/236758",
-                    "email": "travis.carden@gmail.com"
-                },
-                {
-                    "name": "VladimirAus",
-                    "homepage": "https://www.drupal.org/user/673120"
-                }
-            ],
-            "description": "Provides an API for creating fillable, persistent checklists.",
-            "homepage": "http://drupal.org/project/checklistapi",
-            "support": {
-                "source": "https://git.drupalcode.org/project/checklistapi",
-                "issues": "https://www.drupal.org/project/issues/checklistapi"
-            }
-        },
-        {
             "name": "drupal/core",
             "version": "9.4.8",
             "source": {
@@ -1592,77 +1533,6 @@
             "time": "2022-02-24T17:40:53+00:00"
         },
         {
-            "name": "drupal/google_analytics",
-            "version": "4.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/google_analytics.git",
-                "reference": "4.0.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/google_analytics-4.0.2.zip",
-                "reference": "4.0.2",
-                "shasum": "6deec511373e4659e42ff494c8729434728e37d7"
-            },
-            "require": {
-                "drupal/core": "^9.3 || ^10"
-            },
-            "require-dev": {
-                "drupal/token": "^1.7"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "4.0.2",
-                    "datestamp": "1662768595",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "branch-alias": {
-                    "dev-4.x": "4.x-dev"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "See contributors",
-                    "homepage": "https://www.drupal.org/node/49388/committers"
-                },
-                {
-                    "name": "budda",
-                    "homepage": "https://www.drupal.org/user/13164"
-                },
-                {
-                    "name": "ixismark",
-                    "homepage": "https://www.drupal.org/user/3632333"
-                },
-                {
-                    "name": "japerry",
-                    "homepage": "https://www.drupal.org/user/45640"
-                },
-                {
-                    "name": "pfaocle",
-                    "homepage": "https://www.drupal.org/user/9740"
-                },
-                {
-                    "name": "roberto.rivera.ixis",
-                    "homepage": "https://www.drupal.org/user/3632325"
-                }
-            ],
-            "description": "Allows your site to be tracked by Google Analytics by adding a Javascript tracking code to every page.",
-            "homepage": "https://www.drupal.org/project/google_analytics",
-            "support": {
-                "source": "https://git.drupalcode.org/project/google_analytics",
-                "issues": "https://www.drupal.org/project/issues/google_analytics"
-            }
-        },
-        {
             "name": "drupal/metatag",
             "version": "1.22.0",
             "source": {
@@ -1727,59 +1597,6 @@
                 "source": "https://git.drupalcode.org/project/metatag",
                 "issues": "https://www.drupal.org/project/issues/metatag",
                 "docs": "https://www.drupal.org/docs/8/modules/metatag"
-            }
-        },
-        {
-            "name": "drupal/seo_checklist",
-            "version": "5.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/seo_checklist.git",
-                "reference": "5.1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/seo_checklist-5.1.0.zip",
-                "reference": "5.1.0",
-                "shasum": "fed410fef98a748e4b0ed90142b4f6a8ae6e86b8"
-            },
-            "require": {
-                "drupal/checklistapi": "^2.0",
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "5.1.0",
-                    "datestamp": "1629912904",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Ben Finklea",
-                    "homepage": "https://www.drupal.org/user/46676"
-                },
-                {
-                    "name": "TravisCarden",
-                    "homepage": "https://www.drupal.org/user/236758"
-                }
-            ],
-            "description": "Uses best practices to check for proper search engine optimization.",
-            "homepage": "https://www.drupal.org/project/seo_checklist",
-            "keywords": [
-                "SEO"
-            ],
-            "support": {
-                "source": "http://drupalcode.org/seo_checklist",
-                "issues": "https://www.drupal.org/project/issues/seo_checklist"
             }
         },
         {

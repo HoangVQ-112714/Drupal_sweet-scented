@@ -1,0 +1,10 @@
+uuid: cdda4086-0f61-4d28-8611-b1a792fc9574
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.token
+label: Token
+targetEntityType: media
+cache: true

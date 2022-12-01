@@ -1,8 +1,0 @@
-uuid: 7e6d52d5-370b-46b9-b89e-b8b03d0528a1
-langcode: en
-status: true
-dependencies: {  }
-id: blog-menu-right
-label: 'Blog Menu Right'
-description: ''
-locked: false
