@@ -1,0 +1,8 @@
+uuid: f69061c9-1ded-41e9-a96a-23e3df968d23
+langcode: en
+status: true
+dependencies: {  }
+id: blog-menu-left
+label: 'Blog Menu Left'
+description: ''
+locked: false

@@ -24,37 +24,29 @@
   body[route-name="view.blog_show.page_blog_show"],
   body[route-name="search.view_node_search"],
   body[route-name="entity.taxonomy_term.canonical"] {
-
     header#header {
       border-top: 1px solid $color_2;
-
       .section.layout-container.clearfix {
         div {
           flex-direction: column !important;
-
           nav#block-blogmenumain,
           #block-blogmenuright {
             display: none !important;
           }
-
           nav#block-blogmenumain-2 {
             display: flex !important;
-
             ul {
               display: flex;
               list-style-type: none;
               margin: auto !important;
-
               li {
                 margin: auto;
               }
             }
           }
-
           #block-blogmenuleft {
             width: 100% !important;
             border-bottom: 1px solid $color_2;
-
             ul {
               justify-content: space-around;
               border: none !important;
@@ -63,13 +55,10 @@
         }
       }
     }
-
     #main.main-content-big {
-
       #content.main-content {
         width: 100%;
       }
-
       div#sidebar-second {
         display: none;
       }
@@ -155,8 +144,6 @@
           div#block-sweetscented-site-branding {
             margin: auto;
             text-align: center;
-            width: auto;
-            height: auto;
           }
 
           nav#block-sweetscented-main-menu {

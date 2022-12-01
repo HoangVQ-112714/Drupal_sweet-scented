@@ -1,0 +1,25 @@
+uuid: 27e6352b-a788-4a0c-b80d-51d7bd9fbb13
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.blog-menu-right
+  module:
+    - system
+  theme:
+    - sweetscented
+id: blogmenuright
+theme: sweetscented
+region: primary_menu
+weight: -4
+provider: null
+plugin: 'system_menu_block:blog-menu-right'
+settings:
+  id: 'system_menu_block:blog-menu-right'
+  label: 'Blog Menu Right'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

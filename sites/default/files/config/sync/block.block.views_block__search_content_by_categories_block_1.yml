@@ -1,0 +1,24 @@
+uuid: be6886c5-c43a-4a92-8735-5b3f9bbd4437
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_content_by_categories
+  module:
+    - views
+  theme:
+    - sweetscented
+id: views_block__search_content_by_categories_block_1
+theme: sweetscented
+region: sidebar_second
+weight: -5
+provider: null
+plugin: 'views_block:search_content_by_categories-block_1'
+settings:
+  id: 'views_block:search_content_by_categories-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }
