@@ -20,7 +20,6 @@
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4",
         "drupal/core-vendor-hardening": "^9.4",
-        "drupal/seo_checklist": "5.1",
         "drupal/yoast_seo": "^2.0@alpha",
         "drush/drush": "^11.3"
     },
