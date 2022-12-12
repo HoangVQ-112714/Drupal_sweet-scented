@@ -47,3 +47,4 @@ sites/simpletest
 .lando.yml
 .lando
 .idea
+/.lando/
