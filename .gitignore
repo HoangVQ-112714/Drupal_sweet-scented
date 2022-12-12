@@ -45,4 +45,5 @@ sites/simpletest
 # Custom
 .env
 .lando.yml
-/.lando/
+lando/
+.idea
