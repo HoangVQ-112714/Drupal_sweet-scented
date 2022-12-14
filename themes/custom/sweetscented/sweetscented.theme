@@ -9,7 +9,7 @@ function sweetscented_preprocess_html(&$variables){
 }
 
 /**
- * Implements hook_preprocess_page()..
+ * Implements hook_preprocess_page().
  *
  */
  function sweetscented_preprocess_page(&$variables){
