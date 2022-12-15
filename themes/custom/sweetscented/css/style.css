@@ -524,8 +524,6 @@ article.node.node--type-blog.node--promoted.node--view-mode-full header .blog-ca
 }
 article.node.node--type-blog.node--promoted.node--view-mode-full .node__content img {
   width: 100%;
-  border: 2px solid #dd9933;
-  border-radius: 7px;
   height: auto;
   object-fit: contain;
 }
@@ -722,6 +720,7 @@ body[route-name="entity.taxonomy_term.canonical"] article.node.node--type-blog.n
   div#main-wrapper-home div#block-sweetscented-content div#home-body_front .home-body_content {
     max-width: 768px;
   }
+
   body[route-name="entity.node.canonical"] div#main-wrapper,
 body[route-name="view.blog_show.page_blog_show"] div#main-wrapper,
 body[route-name="search.view_node_search"] div#main-wrapper,
