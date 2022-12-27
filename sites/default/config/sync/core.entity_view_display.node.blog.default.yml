@@ -6,14 +6,13 @@ dependencies:
     - field.field.node.blog.body
     - field.field.node.blog.field_blog_category
     - field.field.node.blog.field_blog_description
-    - field.field.node.blog.field_image
+    - field.field.node.blog.field_media_image
     - field.field.node.blog.field_meta_tags
     - field.field.node.blog.field_real_time_seo
     - field.field.node.blog.field_related_blogs
     - field.field.node.blog.field_tags
     - node.type.blog
   module:
-    - image
     - metatag
     - text
     - user
@@ -45,16 +44,14 @@ content:
     third_party_settings: {  }
     weight: 102
     region: content
-  field_image:
-    type: image
+  field_media_image:
+    type: entity_reference_entity_view
     label: above
     settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    weight: 106
+    weight: 110
     region: content
   field_meta_tags:
     type: metatag_empty_formatter

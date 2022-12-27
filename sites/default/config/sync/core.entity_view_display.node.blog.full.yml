@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.blog.body
     - field.field.node.blog.field_blog_category
     - field.field.node.blog.field_blog_description
-    - field.field.node.blog.field_image
+    - field.field.node.blog.field_media_image
     - field.field.node.blog.field_meta_tags
     - field.field.node.blog.field_real_time_seo
     - field.field.node.blog.field_related_blogs
@@ -54,7 +54,7 @@ content:
     region: content
 hidden:
   field_blog_description: true
-  field_image: true
+  field_media_image: true
   field_meta_tags: true
   field_real_time_seo: true
   links: true
